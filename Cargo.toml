@@ -11,7 +11,7 @@ license = "MIT"
 
 [dependencies]
 hyper = "0.10"
-hyper-native-tls = "0.2"
+hyper-native-tls = "0.3.0"
 pbr = "1.0.0-alpha.3"
 regex = "0.2"
 json = "0.11"
