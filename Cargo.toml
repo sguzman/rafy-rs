@@ -15,3 +15,9 @@ hyper-native-tls = "0.3.0"
 pbr = "1.0.0-alpha.3"
 regex = "0.2"
 json = "0.11"
+openssl-sys = "*"
+
+[features]
+# Force openssl-sys to staticly link in the openssl library. Necessary when
+# cross compiling to x86_64-unknown-linux-musl.
+vendored = ["openssl-sys/vendored"]
